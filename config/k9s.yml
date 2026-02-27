@@ -1,0 +1,53 @@
+General:
+  - name: Show active keyboard mnemonics and help
+    key: "?"
+  - name: Show all available resource alias
+    key: ctrl+a
+  - name: Bail out of K9s
+    key: ":q, ctrl+c"
+  - name: Bail out of view/command/filter mode
+    key: "<esc>"
+
+Resource View:
+  - name: View a Kubernetes resource using singular/plural or short-name
+    key: ":pod"
+  - name: View a Kubernetes resource in a given namespace
+    key: ":pod namespace"
+  - name: View filtered pods
+    key: ":pod /fred"
+  - name: View labeled pods
+    key: ":pod label=value"
+  - name: View pods in a given context
+    key: ":pod @ctx1"
+  - name: Filter out a resource view given a filter
+    key: "/filter"
+  - name: Inverse regex filter
+    key: "/!filter"
+  - name: Filter resource view by labels
+    key: "/-l label"
+  - name: Fuzzy find a resource given a filter
+    key: "/-f filter"
+
+Resource Management:
+  - name: Describe, view, edit, view logs, etc.
+    key: "d, v, e, l, …"
+  - name: Delete a resource (TAB and ENTER to confirm)
+    key: ctrl+d
+  - name: Kill a resource (no confirmation dialog)
+    key: ctrl+k
+
+Context and Namespace:
+  - name: View and switch to another Kubernetes context (Pod view)
+    key: ": ctx"
+  - name: View and switch directly to another Kubernetes context (Last used view)
+    key: ": ctx context-name"
+  - name: View and switch to another Kubernetes namespace
+    key: ": ns"
+
+Miscellaneous:
+  - name: View all saved resources
+    key: ": screendump or sd"
+  - name: Launch pulses view
+    key: ": pulses or pu"
+  - name: Launch XRay view
+    key: ": xray RESOURCE [NAMESPACE]"
