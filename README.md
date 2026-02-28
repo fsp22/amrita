@@ -61,3 +61,33 @@ File names should follow the pattern `{APPNAME}.yml` (e.g., `vscode.yml`, `subli
 ## License
 
 See license file
+
+## Related software
+
+- https://github.com/kencx/keyb
+- https://github.com/cheat/cheat
+- https://github.com/quiescer/cht
+
+## Sample prompt to generate config file
+
+````
+load the content at 
+
+https://k9scli.io/topics/commands/
+
+and extract keybindings. Create a file yaml using the following format:
+
+```
+section1:
+  - name: Open new file 
+    key: ctrl+b
+  - name: Create new file 
+    key: ctrl+n
+section2:
+  - name: Open new window 
+    key: ctrl+v
+  - name: Create new window 
+    key: ctrl+1
+```
+````
+

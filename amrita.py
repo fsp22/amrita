@@ -10,6 +10,9 @@ from textual.containers import Horizontal, ScrollableContainer
 from textual.reactive import reactive
 from textual.binding import Binding
 
+config_dir = Path(__file__).parent / "config"
+print(f"Looking for config files in: {config_dir}")
+
 class PairRow(Horizontal):
     def __init__(self, left: str, right: str = ""):
         super().__init__()
@@ -96,13 +99,13 @@ class ShortcutApp(App):
     def on_input_changed(self, event: Input.Changed):
         query = event.value.lower()
         self.search_query = query
-        
+
         for row in self.query(PairRow):
             # Show all if search field is empty
             if not query:
                 row.display = True
                 continue
-                
+
             # Use fuzzy matching for better search results
             score_name = fuzz.partial_ratio(query, row.left_value.lower())
             score_key = fuzz.partial_ratio(query, row.right_value.lower())
@@ -135,34 +138,32 @@ class ShortcutApp(App):
 
 def load_config_file(app_name: str) -> Dict[str, Any]:
     """Load YAML config file for the specified app name."""
-    config_dir = Path("config")
-    
     if not config_dir.exists():
         print(f"Error: Config directory '{config_dir}' does not exist.")
         sys.exit(1)
-    
+
     # Find all YAML files in config directory
     yaml_files = list(config_dir.glob("*.yml")) + list(config_dir.glob("*.yaml"))
-    
+
     if not yaml_files:
         print(f"Error: No YAML config files found in '{config_dir}'.")
         sys.exit(1)
-    
+
     # Use fuzzy matching to find the best matching file
     file_names = [f.stem for f in yaml_files]
     best_match, score, _ = process.extractOne(app_name, file_names, scorer=fuzz.token_set_ratio)
-    
+
     if score < 60:
         print(f"Available config files:")
         for f in file_names:
             print(f"  - {f}")
         print(f"\nNo close match found for '{app_name}'. Please specify a valid app name.")
         sys.exit(1)
-    
+
     config_file = config_dir / f"{best_match}.yml"
     if not config_file.exists():
         config_file = config_dir / f"{best_match}.yaml"
-    
+
     try:
         with open(config_file, 'r') as f:
             return yaml.safe_load(f)
@@ -173,7 +174,7 @@ def load_config_file(app_name: str) -> Dict[str, Any]:
 def parse_shortcuts(config: Dict[str, Any]) -> Dict[str, List[Dict[str, str]]]:
     """Parse shortcuts from config file."""
     shortcuts = {}
-    
+
     for section, items in config.items():
         shortcuts[section] = []
         for item in items:
@@ -182,25 +183,24 @@ def parse_shortcuts(config: Dict[str, Any]) -> Dict[str, List[Dict[str, str]]]:
                     "name": item.get("name", ""),
                     "key": item.get("key", "")
                 })
-    
+
     return shortcuts
 
 def main():
     if len(sys.argv) < 2:
         print("Usage: python amrita.py <app_name>")
         print("\nAvailable config files:")
-        config_dir = Path("config")
         if config_dir.exists():
             for f in sorted(config_dir.glob("*.yml")):
                 print(f"  - {f.stem}")
             for f in sorted(config_dir.glob("*.yaml")):
                 print(f"  - {f.stem}")
         sys.exit(1)
-    
+
     app_name = sys.argv[1]
     config = load_config_file(app_name)
     shortcuts = parse_shortcuts(config)
-    
+
     app = ShortcutApp(shortcuts)
     app.run()
 

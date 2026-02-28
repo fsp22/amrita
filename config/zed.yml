@@ -1,0 +1,297 @@
+Global:
+  - name: Start Debugger
+    key: f4
+  - name: Stop Debugger
+    key: shift-f5
+  - name: Rerun Debug Session
+    key: shift-cmd-f5
+  - name: Pause Debugger
+    key: f6
+  - name: Step Over
+    key: f7
+  - name: Step Into
+    key: ctrl-f11
+  - name: Step Out
+    key: shift-f11
+  - name: Increase Buffer Font Size
+    key: cmd-=
+  - name: Decrease Buffer Font Size
+    key: cmd--
+  - name: Reset Buffer Font Size
+    key: cmd-0
+  - name: Open Settings
+    key: cmd-,
+  - name: Open Settings File
+    key: cmd-alt-,
+  - name: Quit Zed
+    key: cmd-q
+  - name: Hide Zed
+    key: cmd-h
+  - name: Hide Others
+    key: alt-cmd-h
+  - name: Minimize Zed
+    key: cmd-m
+  - name: Toggle Full Screen
+    key: fn-f
+  - name: Toggle Full Screen
+    key: ctrl-cmd-f
+  - name: Rate Predictions
+    key: ctrl-cmd-z
+  - name: Toggle Edit Prediction Menu
+    key: ctrl-cmd-i
+  - name: Toggle LSP Tool Menu
+    key: ctrl-cmd-l
+  - name: Display Cursor Names
+    key: ctrl-cmd-c
+  - name: Toggle Worktree Security
+    key: ctrl-cmd-s
+
+Editor:
+  - name: Cancel
+    key: escape
+  - name: Backspace
+    key: shift-backspace
+  - name: Backspace
+    key: ctrl-h
+  - name: Delete
+    key: ctrl-d
+  - name: Tab
+    key: tab
+  - name: Backtab
+    key: shift-tab
+  - name: Transpose
+    key: ctrl-t
+  - name: Kill Ring Cut
+    key: ctrl-k
+  - name: Kill Ring Yank
+    key: ctrl-y
+  - name: Rewrap
+    key: cmd-k cmd-q
+  - name: Delete to Beginning of Line
+    key: cmd-backspace
+  - name: Delete to End of Line
+    key: cmd-delete
+  - name: Delete to Previous Word Start
+    key: alt-backspace
+  - name: Delete to Next Word End
+    key: alt-delete
+  - name: Cut
+    key: cmd-x
+  - name: Copy
+    key: cmd-c
+  - name: Paste
+    key: cmd-v
+  - name: Undo
+    key: cmd-z
+  - name: Redo
+    key: cmd-shift-z
+  - name: Move Up
+    key: up
+  - name: Move to Start of Paragraph
+    key: ctrl-up
+  - name: Move Page Up
+    key: pageup
+  - name: Select Page Up
+    key: shift-pageup
+  - name: Move Down
+    key: down
+  - name: Move to End of Paragraph
+    key: ctrl-down
+  - name: Move Page Down
+    key: pagedown
+  - name: Select Page Down
+    key: shift-pagedown
+  - name: Move Left
+    key: left
+  - name: Move Right
+    key: right
+  - name: Move to Previous Word Start
+    key: alt-left
+  - name: Move to Next Word End
+    key: alt-right
+  - name: Move to Beginning of Line
+    key: cmd-left
+  - name: Move to End of Line
+    key: cmd-right
+  - name: Move to Beginning
+    key: cmd-up
+  - name: Move to End
+    key: cmd-down
+  - name: Select Up
+    key: shift-up
+  - name: Select Down
+    key: shift-down
+  - name: Select Left
+    key: shift-left
+  - name: Select Right
+    key: shift-right
+  - name: Select to Previous Word Start
+    key: alt-shift-left
+  - name: Select to Next Word End
+    key: alt-shift-right
+  - name: Select All
+    key: cmd-a
+  - name: Select Line
+    key: cmd-l
+  - name: Format
+    key: cmd-shift-i
+  - name: Organize Imports
+    key: alt-shift-o
+  - name: Toggle Line Numbers
+    key: cmd-;
+  - name: Toggle Selected Diff Hunks
+    key: cmd-'
+  - name: Expand All Diff Hunks
+    key: cmd-\\
+  - name: Blame
+    key: cmd-alt-g b
+  - name: Open Modified Files
+    key: cmd-alt-g m
+  - name: Review Diff
+    key: cmd-alt-g r
+  - name: Show Signature Help
+    key: cmd-i
+  - name: Toggle Breakpoint
+    key: f9
+  - name: Edit Log Breakpoint
+    key: shift-f9
+  - name: Go to Declaration
+    key: ctrl-f12
+  - name: Go to Declaration (Split)
+    key: alt-ctrl-f12
+  - name: Toggle Edit Prediction
+    key: ctrl-cmd-e
+
+Editor (Full Mode):
+  - name: Newline
+    key: shift-enter
+  - name: Newline Below
+    key: cmd-enter
+  - name: Newline Above
+    key: cmd-shift-enter
+  - name: Toggle Soft Wrap
+    key: cmd-k z
+  - name: Deploy Search
+    key: cmd-f
+  - name: Deploy Replace
+    key: cmd-alt-f
+  - name: Add Selection to Thread
+    key: cmd->
+  - name: Insert into Editor
+    key: cmd-<
+  - name: Select Enclosing Symbol
+    key: cmd-alt-e
+  - name: Open Selections in Multibuffer
+    key: alt-enter
+
+Workspace:
+  - name: Open Recent
+    key: alt-cmd-o
+  - name: Open Remote
+    key: ctrl-cmd-o
+  - name: New Terminal
+    key: ctrl-~
+  - name: Save
+    key: cmd-s
+  - name: Save Without Format
+    key: cmd-k s
+  - name: Save As
+    key: cmd-shift-s
+  - name: New Window
+    key: cmd-shift-n
+  - name: Toggle Terminal Panel
+    key: ctrl-`
+  - name: Activate Pane 1
+    key: cmd-1
+  - name: Activate Pane 2
+    key: cmd-2
+  - name: Activate Pane 3
+    key: cmd-3
+  - name: Activate Pane 4
+    key: cmd-4
+  - name: Activate Pane 5
+    key: cmd-5
+  - name: Activate Pane 6
+    key: cmd-6
+  - name: Activate Pane 7
+    key: cmd-7
+  - name: Activate Pane 8
+    key: cmd-8
+  - name: Toggle Left Dock
+    key: cmd-b
+  - name: Toggle Right Dock
+    key: cmd-alt-b
+  - name: Toggle Bottom Dock
+    key: cmd-j
+  - name: Toggle Workspace Sidebar
+    key: cmd-alt-j
+  - name: Focus Workspace Sidebar
+    key: cmd-alt-;
+  - name: Toggle All Docks
+    key: alt-cmd-y
+  - name: Reset Active Dock Size
+    key: ctrl-alt-0
+  - name: Open Keymap
+    key: cmd-k cmd-s
+  - name: Toggle Theme Selector
+    key: cmd-k cmd-t
+  - name: Toggle Settings Profile Selector
+    key: ctrl-alt-cmd-p
+  - name: Toggle Project Symbols
+    key: cmd-t
+  - name: Toggle File Finder
+    key: cmd-p
+  - name: Toggle Tab Switcher
+    key: ctrl-tab
+  - name: Toggle Command Palette
+    key: cmd-shift-p
+  - name: Toggle Diagnostics
+    key: cmd-shift-m
+  - name: Toggle Project Panel Focus
+    key: cmd-shift-e
+  - name: Toggle Outline Panel Focus
+    key: cmd-shift-b
+  - name: Toggle Git Panel Focus
+    key: ctrl-shift-g
+  - name: Toggle Debug Panel Focus
+    key: cmd-shift-d
+  - name: Toggle Agent Focus
+    key: cmd-?
+  - name: Save All
+    key: cmd-alt-s
+  - name: Toggle Encoding Selector
+    key: cmd-k n
+  - name: Toggle Language Selector
+    key: cmd-k m
+  - name: Add Toolchain
+    key: cmd-k cmd-m
+  - name: Activate Pane Left
+    key: cmd-k cmd-left
+  - name: Activate Pane Right
+    key: cmd-k cmd-right
+  - name: Activate Pane Up
+    key: cmd-k cmd-up
+  - name: Activate Pane Down
+    key: cmd-k cmd-down
+  - name: Swap Pane Left
+    key: cmd-k shift-left
+  - name: Swap Pane Right
+    key: cmd-k shift-right
+  - name: Swap Pane Up
+    key: cmd-k shift-up
+  - name: Swap Pane Down
+    key: cmd-k shift-down
+  - name: Toggle Extensions
+    key: cmd-shift-x
+  - name: Rerun Debugger
+    key: f5
+  - name: Close Active Dock
+    key: cmd-w
+
+Workspace (Non-Terminal):
+  - name: New File
+    key: cmd-n
+  - name: Spawn Task
+    key: cmd-shift-r
+  - name: Rerun Task
+    key: cmd-alt-r

@@ -1,0 +1,133 @@
+File:
+  - name: New
+    key: Command + N
+  - name: New Window
+    key: Command + Shift + N
+  - name: New Tab
+    key: Command + T
+  - name: Open
+    key: Command + O
+  - name: Open Quickly
+    key: Command + Shift + O
+  - name: Reopen Closed File
+    key: Command + Shift + T
+  - name: Save
+    key: Command + S
+  - name: Save As / Duplicate
+    key: Command + Shift + S
+  - name: Preference
+    key: Command + ,
+  - name: Close
+    key: Command + W
+
+Edit:
+  - name: New Paragraph
+    key: Enter
+  - name: New Line
+    key: Shift + Enter
+  - name: Cut
+    key: Command + X
+  - name: Copy
+    key: Command + C
+  - name: Paste
+    key: Command + V
+  - name: Copy As Markdown
+    key: Command + Shift + C
+  - name: Paste As Plain Text
+    key: Command + Shift + V
+  - name: Select All
+    key: Command + A
+  - name: Select Line/Sentence
+    key: Command + L
+  - name: Delete Row (in table)
+    key: Command + Shift + Backspace
+  - name: Select Style Scope/Select Cell (in table)
+    key: Command + E
+  - name: Select Word
+    key: Command + D
+  - name: Delete Word
+    key: Command + Shift + D
+  - name: Jump to Top
+    key: Command + ↑
+  - name: Jump to Selection
+    key: Command + J
+  - name: Jump to Bottom
+    key: Command + ↓
+  - name: Find
+    key: Command + F
+  - name: Find Next
+    key: Command + G / Enter
+  - name: Find Previous
+    key: Command + Shift + G / Shift + Enter
+  - name: Replace
+    key: Command + H
+
+Paragraph:
+  - name: Heading 1 to 6
+    key: Command + 1/2/3/4/5/6
+  - name: Paragraph
+    key: Command + 0
+  - name: Increase Heading Level
+    key: Command + =
+  - name: Decrease Heading Level
+    key: Command + -
+  - name: Table
+    key: Command + Option + T
+  - name: Code Fences
+    key: Command + Option + C
+  - name: Math Block
+    key: Command + Option + B
+  - name: Quote
+    key: Command + Option + Q
+  - name: Ordered List
+    key: Command + Option + O
+  - name: Unordered List
+    key: Command + Option + U
+  - name: Indent
+    key: Command + [ / Tab
+  - name: Outdent
+    key: Command + ] / Shift + Tab
+
+Format:
+  - name: Strong
+    key: Command + B
+  - name: Emphasis
+    key: Command + I
+  - name: Underline
+    key: Command + U
+  - name: Code
+    key: Command + Shift + `
+  - name: Strike
+    key: Control + Shift + `
+  - name: Hyperlink
+    key: Command + K
+  - name: Image
+    key: Command + Control + I
+  - name: Clear Format
+    key: Command + \
+
+View:
+  - name: Toggle Sidebar
+    key: Command + Shift + L
+  - name: Outline
+    key: Command + Control + 1
+  - name: Articles
+    key: Command + Control + 2
+  - name: File Tree
+    key: Command + Control + 3
+  - name: Source Code Mode
+    key: Command + /
+  - name: Focus Mode
+    key: F8
+  - name: Typewriter Mode
+    key: F9
+  - name: Toggle Fullscreen
+    key: Command + Option + F
+  - name: Actual Size
+    key: Not Supported
+  - name: Zoom In
+    key: Not Supported
+  - name: Zoom Out
+    key: Not Supported
+  - name: Switch Between Opened Documents
+    key: Command + `
